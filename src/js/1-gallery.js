@@ -81,7 +81,8 @@ function createGalleryItem(images) {
   const img = document.createElement('img');
   img.classList.add('gallery-image');
   img.src = images.preview;
-//   img.dataset.source = images.original;
+  
+  img.dataset.source = images.original;
   img.alt = images.description;
    li.appendChild(link);
   link.appendChild(img);
